@@ -1,0 +1,4 @@
+repository "Sulangkay_PROTOTYPE/Sulangkay_PROTOTYPE@18968121804347@cloud"
+  path "/"
+    br "/main"
+    co "/main"
