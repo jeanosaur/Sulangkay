@@ -33,13 +33,9 @@ public class PlayerMovement : MonoBehaviour
     private bool doubleJumpActive = false;
     private float doubleJumpTimer = 0f;
     public float doubleJumpDuration = 2f;
-
-    [Header("Double Jump Cooldown")]
     public float doubleJumpCooldown = 5f;
     private float cooldownTimer = 0f;
     private bool onCooldown = false;
-
-    [Header("Double Tap Detection")]
     public float doubleTapTime = 0.3f;
     private float lastJumpTapTime = -1f;
     private bool jumpTappedOnce = false;
