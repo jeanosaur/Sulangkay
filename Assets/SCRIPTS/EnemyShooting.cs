@@ -3,16 +3,28 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject Bullet;
     public Transform BulletPosition;
-
+    private GameObject player;
+    
     private float timer; // controls the frequency of the bullet spawning
 
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= 2)
+        float distance = Vector2.Distance(transform.position,  player.transform.position);
+        Debug.Log(distance);
+
+        if (distance < 50)
         {
-            timer = 0;
-            shoot();
+            timer += Time.deltaTime;
+            
+            if (timer >= 2)
+            {
+                timer = 0;
+                shoot();
+            }
         }
     }
 
