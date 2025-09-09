@@ -28,15 +28,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
     [Header("Double Jump Settings")]
-    public bool doubleJumpEnabled = false;
+    [SerializeField] public bool doubleJumpEnabled = false;
     private bool canDoubleJump = false;
     private bool doubleJumpActive = false;
     private float doubleJumpTimer = 0f;
-    public float doubleJumpDuration = 2f;
-    public float doubleJumpCooldown = 5f;
+    [SerializeField] public float doubleJumpDuration = 2f;
+    [SerializeField] public float doubleJumpCooldown = 5f;
     private float cooldownTimer = 0f;
     private bool onCooldown = false;
-    public float doubleTapTime = 0.3f;
+    [SerializeField] public float doubleTapTime = 0.3f;
     private float lastJumpTapTime = -1f;
     private bool jumpTappedOnce = false;
 
