@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
     }
 
-    private bool isGrounded()
+    private bool isGrounded() //check if nasa ground si player
     {
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
