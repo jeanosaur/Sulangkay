@@ -5,6 +5,7 @@ public class EnemyBullet : MonoBehaviour
     private GameObject Player;
     private Rigidbody2D rb;
     [SerializeField] public float bulletForce;
+    public int damage = 1;
 
     void Start()
     {

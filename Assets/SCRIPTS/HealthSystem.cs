@@ -2,34 +2,23 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] private float startingHealth;
-    public float currentHealth {get; private set;}
+    [SerializeField] public int PlayerHealth; //tracks player's health
+    [SerializeField] public int PlayerMaxHealth = 3; // full health
 
-    private void Awake()
+    private void Start()
     {
-        currentHealth = startingHealth; 
+        PlayerHealth = PlayerMaxHealth; //sets current health to full
     }
 
-    private void TakeDamage(float _damage)
+    public void TakeDamage(int amount) // tracker of damage player takes
     {
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0f, startingHealth);
+         PlayerHealth -= amount;
 
-        if (currentHealth <= 0f)
-        {
-            // player hurt
-        }
-
-        else
-        {
-            //player dead 
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(1);
-        }
+            //if Player's HP reaches zero, the game object is destroyed
+         if (PlayerHealth <= 0)
+         {
+             Destroy(gameObject);
+         }
     }
 }
+    
