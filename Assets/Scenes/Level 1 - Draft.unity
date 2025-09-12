@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 19483357}
   m_Layer: 3
   m_Name: Closed Sprite Shape (21)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 86960298}
   m_Layer: 3
   m_Name: Closed Sprite Shape (31)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 138868031}
   m_Layer: 3
   m_Name: Closed Sprite Shape (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 225027998}
   m_Layer: 3
   m_Name: Closed Sprite Shape (33)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2128,7 +2128,7 @@ GameObject:
   - component: {fileID: 345551607}
   m_Layer: 3
   m_Name: Closed Sprite Shape (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3137,7 +3137,7 @@ GameObject:
   - component: {fileID: 522515588}
   m_Layer: 3
   m_Name: Closed Sprite Shape (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3353,7 +3353,7 @@ GameObject:
   - component: {fileID: 554412956}
   m_Layer: 3
   m_Name: Closed Sprite Shape (35)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3776,7 +3776,7 @@ GameObject:
   - component: {fileID: 586648078}
   m_Layer: 3
   m_Name: Closed Sprite Shape (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4878,7 +4878,7 @@ GameObject:
   - component: {fileID: 754060722}
   m_Layer: 3
   m_Name: Closed Sprite Shape (30)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5523,7 +5523,7 @@ GameObject:
   - component: {fileID: 818348308}
   m_Layer: 3
   m_Name: Closed Sprite Shape (32)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5826,7 +5826,7 @@ GameObject:
   - component: {fileID: 861263683}
   m_Layer: 3
   m_Name: Closed Sprite Shape (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6477,7 +6477,7 @@ GameObject:
   - component: {fileID: 910883844}
   m_Layer: 3
   m_Name: Closed Sprite Shape (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6946,7 +6946,7 @@ GameObject:
   - component: {fileID: 994644656}
   m_Layer: 3
   m_Name: Closed Sprite Shape (19)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7604,7 +7604,7 @@ GameObject:
   - component: {fileID: 1054655889}
   m_Layer: 3
   m_Name: Closed Sprite Shape (34)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8691,7 +8691,7 @@ GameObject:
   - component: {fileID: 1094949781}
   m_Layer: 3
   m_Name: Closed Sprite Shape
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9595,7 +9595,7 @@ GameObject:
   - component: {fileID: 1160361922}
   m_Layer: 3
   m_Name: Closed Sprite Shape (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9985,7 +9985,7 @@ GameObject:
   - component: {fileID: 1221049752}
   m_Layer: 3
   m_Name: Closed Sprite Shape (26)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10288,7 +10288,7 @@ GameObject:
   - component: {fileID: 1238025904}
   m_Layer: 3
   m_Name: Closed Sprite Shape (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10591,7 +10591,7 @@ GameObject:
   - component: {fileID: 1321935653}
   m_Layer: 3
   m_Name: Closed Sprite Shape (27)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10807,7 +10807,7 @@ GameObject:
   - component: {fileID: 1346567787}
   m_Layer: 3
   m_Name: Closed Sprite Shape (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11458,7 +11458,7 @@ GameObject:
   - component: {fileID: 1386126228}
   m_Layer: 3
   m_Name: Closed Sprite Shape (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11935,7 +11935,7 @@ GameObject:
   - component: {fileID: 1421240146}
   m_Layer: 3
   m_Name: Closed Sprite Shape (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12325,7 +12325,7 @@ GameObject:
   - component: {fileID: 1470740705}
   m_Layer: 3
   m_Name: Closed Sprite Shape (22)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12339,8 +12339,8 @@ Transform:
   m_GameObject: {fileID: 1470740701}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.82, y: 37.68, z: -0.50286067}
-  m_LocalScale: {x: 0.47196326, y: 0.20198977, z: 1}
+  m_LocalPosition: {x: 65.76, y: 37.08, z: -0.50286067}
+  m_LocalScale: {x: 0.47196326, y: 0.33233377, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 443045523}
@@ -12746,7 +12746,7 @@ GameObject:
   - component: {fileID: 1490196543}
   m_Layer: 3
   m_Name: Closed Sprite Shape (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13350,7 +13350,7 @@ GameObject:
   - component: {fileID: 1554157216}
   m_Layer: 3
   m_Name: Closed Sprite Shape (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13666,7 +13666,7 @@ GameObject:
   - component: {fileID: 1574148251}
   m_Layer: 3
   m_Name: Closed Sprite Shape (29)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14837,7 +14837,7 @@ GameObject:
   - component: {fileID: 1671541197}
   m_Layer: 3
   m_Name: Closed Sprite Shape (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15227,7 +15227,7 @@ GameObject:
   - component: {fileID: 1731662031}
   m_Layer: 3
   m_Name: Closed Sprite Shape (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15580,7 +15580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   jumpForce: 8
-  isFacingRight: 0
+  isFacingRight: 1
   coyoteTime: 1
   jumpBufferTime: 1
   fallMultiplier: 2.5
@@ -15635,7 +15635,7 @@ GameObject:
   - component: {fileID: 1736595169}
   m_Layer: 3
   m_Name: Closed Sprite Shape (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16112,7 +16112,7 @@ GameObject:
   - component: {fileID: 1869122768}
   m_Layer: 3
   m_Name: Closed Sprite Shape (20)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16696,7 +16696,7 @@ GameObject:
   - component: {fileID: 1961121379}
   m_Layer: 3
   m_Name: Closed Sprite Shape (25)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17086,7 +17086,7 @@ GameObject:
   - component: {fileID: 1998457541}
   m_Layer: 3
   m_Name: Closed Sprite Shape (36)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17460,7 +17460,7 @@ GameObject:
   - component: {fileID: 2007550955}
   m_Layer: 3
   m_Name: Closed Sprite Shape (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17676,7 +17676,7 @@ GameObject:
   - component: {fileID: 2028081359}
   m_Layer: 3
   m_Name: Closed Sprite Shape (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17979,7 +17979,7 @@ GameObject:
   - component: {fileID: 2059852935}
   m_Layer: 3
   m_Name: Closed Sprite Shape (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18195,7 +18195,7 @@ GameObject:
   - component: {fileID: 2104142924}
   m_Layer: 3
   m_Name: Closed Sprite Shape (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
