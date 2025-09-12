@@ -1,8 +1,10 @@
 using UnityEngine;
+using System.Collections; // Needed for IEnumerator
 
 public class Player : MonoBehaviour
 {
-    //callbacks(?) basta mga variables para sa baba haha
+    // mga variables
+    public int health = 100;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
     public Transform groundCheck;
@@ -12,21 +14,22 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
-    //double jump
+    private SpriteRenderer spriteRenderer;
+
+    // Double jump
     public int extraJumpsValue = 1;
     private int extraJumps;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //add animator stuff here later
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
         extraJumps = extraJumpsValue;
     }
 
     void Update()
     {
-        //player moves left/right
+        // Player moves left/right
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
@@ -35,14 +38,14 @@ public class Player : MonoBehaviour
             extraJumps = extraJumpsValue;
         }
 
-        //jump
+        // Jump
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
-        //double jump
+            // Double jump
             else if (extraJumps > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -50,18 +53,44 @@ public class Player : MonoBehaviour
             }
         }
 
-        //flips player when moving left/right
+        // Flips player when moving left/right
         if (moveInput > 0.01f)
             transform.localScale = Vector3.one;
-
         else if (moveInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
     }
 
-    //keeps player from eternally jumping into space
+    // Keeps player from eternally jumping into space
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
+    // Lose health when damaged by enemy
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Damage")
+        {
+            health -= 25;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            StartCoroutine(BlinkRed());
+
+            if (health <= 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    private IEnumerator BlinkRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
+    }
+
+    private void Die()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+    }
 }

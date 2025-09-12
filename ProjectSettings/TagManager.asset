@@ -8,6 +8,7 @@ TagManager:
   - Item
   - Enemy
   - NPC
+  - Damage
   layers:
   - Default
   - TransparentFX
