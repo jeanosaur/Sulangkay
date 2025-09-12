@@ -8,9 +8,8 @@ public class NPC : MonoBehaviour
 {
     public GameObject DialoguePanel;
     public TextMeshProUGUI DialogueText;
-    public TextMeshProUGUI NPCNameText;
     public string[] dialogue;
-    public int index;
+    private int index;
     
     public GameObject continueButton;
     public float speed;
@@ -37,7 +36,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void zeroText() //reset
+    public void zeroText() //reset text
     {
         DialogueText.text = "";
         index = 0;
