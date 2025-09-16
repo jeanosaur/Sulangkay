@@ -52,7 +52,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    public void Next()
+    public void Next() //enable next dialogue
     {
         continueButton.SetActive(false);
         
