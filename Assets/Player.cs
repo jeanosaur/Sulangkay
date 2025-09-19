@@ -92,5 +92,6 @@ public class Player : MonoBehaviour
     private void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        Destroy(gameObject);
     }
 }
