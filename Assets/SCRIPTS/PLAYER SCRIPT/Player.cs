@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections; // Needed for IEnumerator
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -92,6 +91,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene("Game");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        Destroy(gameObject);
     }
 }
