@@ -1,9 +1,13 @@
+using System.Collections;
 using UnityEngine;
+
 
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField] public int PlayerHealth; //tracks player's health
     [SerializeField] public int PlayerMaxHealth = 3; // full health
+    
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
@@ -19,6 +23,13 @@ public class HealthSystem : MonoBehaviour
          {
              Destroy(gameObject);
          }
+    }
+    
+    private IEnumerator BlinkRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
     }
 }
     
