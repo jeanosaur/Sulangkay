@@ -903,12 +903,11 @@ GameObject:
   - component: {fileID: 288451348}
   - component: {fileID: 288451351}
   - component: {fileID: 288451350}
-  - component: {fileID: 288451354}
   - component: {fileID: 288451352}
   - component: {fileID: 288451355}
+  - component: {fileID: 288451359}
   - component: {fileID: 288451356}
   - component: {fileID: 288451357}
-  - component: {fileID: 288451359}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1067,40 +1066,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288451347}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ead1ffde96a1b6f4ca347ccd1c17708f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: []
---- !u!114 &288451354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288451347}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d822fc27733b7944bbf8a4e3745a4dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 8
-  jumpForce: 20
-  isFacingRight: 1
-  coyoteTime: 1
-  jumpBufferTime: 1
-  fallMultiplier: 4
-  lowJumpMultiplier: 2
-  rb: {fileID: 288451351}
-  groundCheck: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  doubleJumpEnabled: 0
-  doubleJumpDuration: 5
-  doubleJumpCooldown: 5
-  doubleTapTime: 2
 --- !u!114 &288451355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1108,7 +1079,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288451347}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6264cc0edf1b2a04381914bad2458be5, type: 3}
   m_Name: 
@@ -1122,7 +1093,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288451347}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65b3350d8ef03a346b91bf582d29e2de, type: 3}
   m_Name: 
@@ -1155,7 +1126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce37eb60c6c2a84080946d122136c62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
   moveSpeed: 8
   jumpForce: 12
   groundCheck: {fileID: 2089571676}
@@ -1163,7 +1133,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  extraJumpsValue: 1
+  coyoteTime: 0.2
+  coyoteTimeCounter: 0
+  jumpBuffer: 0.2
+  jumpBufferCounter: 0
 --- !u!1 &290359778
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class PlayerMovement02 : MonoBehaviour
         else if (horizontalInput < -0.01f)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        //Player Jump
+        //Basic player jump
         if (Input.GetKey(KeyCode.Space))
             body.linearVelocity = new Vector2(body.linearVelocity.x, speed);
     }

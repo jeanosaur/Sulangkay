@@ -10,7 +10,6 @@ public class EnemyDamage : MonoBehaviour
         if (bullet != null)
         {
             playerHealth.TakeDamage(bullet.damage);
-            
             Destroy(collision.gameObject);
         }
     }
