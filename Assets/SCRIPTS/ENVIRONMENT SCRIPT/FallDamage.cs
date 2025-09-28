@@ -10,7 +10,8 @@ public class FallDamage : MonoBehaviour
     {
       Destroy(other.gameObject);
       playerHealth.TakeDamage(3);
-      SceneManager.LoadScene("Game");
+      playerHealth.Die();
+      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
   }
 }

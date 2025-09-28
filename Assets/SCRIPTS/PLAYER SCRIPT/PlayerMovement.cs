@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
                 onCooldown = false;
             }
         }
-
+    
         // Coyote time logic
         if (isGrounded())
         {

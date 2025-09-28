@@ -25,16 +25,16 @@ public class HealthSystem : MonoBehaviour
              Destroy(gameObject);
              Die();
              BlinkRed();
-             SceneManager.LoadScene("Game");
+             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
          }
     }
 
-    private void Die()
+    public void Die() //void para mag-active ang isdead() function
     {
         isDead = true;
     }
 
-    public bool IsDead()
+    public bool IsDead() //function for item drop
     {
         return isDead;
     }

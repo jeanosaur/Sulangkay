@@ -13,7 +13,7 @@ public class EnemyHealthSystem : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Destroy(gameObject);
     }

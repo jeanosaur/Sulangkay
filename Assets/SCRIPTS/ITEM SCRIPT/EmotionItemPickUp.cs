@@ -2,7 +2,7 @@
 
 public class EmotionItemPickUp : MonoBehaviour
 {
-    public string emotionItemName = "Joy";
+    public string emotionItemName = "Joy"; // 
 
     private void OnTriggerEnter2D(Collider2D collide)
     {
