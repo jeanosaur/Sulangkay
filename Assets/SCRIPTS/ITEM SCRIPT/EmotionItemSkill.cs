@@ -21,6 +21,7 @@ public class EmotionItemSkill : MonoBehaviour
         if (itemCollected && Input.GetKeyDown(KeyCode.Alpha1))
         {
             ActivateExtraJump();
+            Debug.Log("Extra jump activated");
         }
     }
     

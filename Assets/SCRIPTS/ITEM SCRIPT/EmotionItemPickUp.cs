@@ -9,16 +9,16 @@ public class EmotionItemPickUp : MonoBehaviour
         if (collide.CompareTag("Player"))
         {
             PlayerInventory playerInventory = collide.GetComponent<PlayerInventory>();
-            PlayerMovement playerMovement = collide.GetComponent<PlayerMovement>();
+            Player playerMovement = collide.GetComponent<Player>();
 
             if (playerInventory != null)
             {
                 playerInventory.AddItem(emotionItemName);
+                Debug.Log("Emotion item added");
             }
 
             if (playerMovement != null)
             {
-                playerMovement.doubleJumpEnabled = true;
             }
             Destroy(gameObject);
         }
