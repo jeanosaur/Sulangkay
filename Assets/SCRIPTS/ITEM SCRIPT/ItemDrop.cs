@@ -10,7 +10,7 @@ public class ItemDrop : MonoBehaviour
     void Update()
     {
         // to check if player is dead and item has dropped
-		if (playerHealth != null && playerHealth.IsDead() && !hasDropped)
+		//if (playerHealth != null && playerHealth.IsDead() && !hasDropped)
 		{
 			DropItem();
 			hasDropped = true;		

@@ -17,9 +17,6 @@ public class EmotionItemPickUp : MonoBehaviour
                 Debug.Log("Emotion item added");
             }
 
-            if (playerMovement != null)
-            {
-            }
             Destroy(gameObject);
         }
     }

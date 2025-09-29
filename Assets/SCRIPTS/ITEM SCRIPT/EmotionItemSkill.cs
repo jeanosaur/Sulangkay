@@ -4,37 +4,40 @@ using System.Collections.Generic;
 
 public class EmotionItemSkill : MonoBehaviour
 {
-    public EmotionItemPickUp emotionItemPickUp;
+    private Player player;
+    private PlayerInventory playerInventory;
+    
     
     // For Double Jump ng joy item
     public int extraJumpValue = 1;
     public int extraJump = 0;
-    private bool itemCollected = false;
+    public bool itemCollected = false;
 
     private void Start()
     {
         extraJump = 0;
+        player = GameObject.Find("Player").GetComponent<Player>();
+        playerInventory = player.GetComponent<PlayerInventory>();
     }
 
     private void Update()
     {
-        if (itemCollected && Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && playerInventory.inventory.Contains("Joy"))
         {
-            ActivateExtraJump();
-            Debug.Log("Extra jump activated");
+            playerInventory.inventory.Remove("Joy");
+            player.isSkillActive = true;
+            player.isSkillUsed = false;
+            Debug.Log("Skill Active and Not Used");
         }
     }
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collide)
     {
-        if (other.CompareTag("Player"))
+        if (collide.CompareTag("Player"))
         {
+            Debug.Log("Collided with " + collide.name);
             itemCollected = true;
         }
     }
 
-    private void ActivateExtraJump()
-    {
-        extraJump = extraJumpValue;
-    }
 }

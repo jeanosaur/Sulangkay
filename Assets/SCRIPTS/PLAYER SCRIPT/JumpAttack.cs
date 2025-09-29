@@ -22,7 +22,7 @@ public class JumpAttack : MonoBehaviour
                 enemyHealth = collision.gameObject.GetComponent<EnemyHealthSystem>(); // get the enemy health system
                 if (enemyHealth != null)
                 {
-                 enemyHealth.TakeDamage(jumpDamage); //-1 damage ata
+                 enemyHealth.TakeDamage(jumpDamage); //-1 damage
                  rb.linearVelocity = new Vector2(rb.linearVelocity.x, player.jumpForce);
                  enemyHealth.Die();
                 }

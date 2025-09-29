@@ -10,26 +10,20 @@ public class Player : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
     
-    // Player jump refinement
-    public float coyoteTime = 0.2f;
-    public float coyoteTimeCounter;
-    public float jumpBuffer = 0.2f;
-    public float jumpBufferCounter;
-
     private Rigidbody2D rb; //for Rigidbody
-    private bool isGrounded; //kapag nagtapak si player sa ground
+    public bool isGrounded; //kapag nagtapak si player sa ground
+    public bool isMidAir;
+    public bool isSkillActive;
+    public bool isSkillUsed;
 
     private EmotionItemSkill emotionSkill; //reference ung EmotionItemSkill.cs
+    private PlayerInventory playerInventory;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // for rigidbody
-        
+        playerInventory = GetComponent<PlayerInventory>();
         emotionSkill = GetComponent<EmotionItemSkill>();
-        if (emotionSkill == null)
-        {
-            
-        }
     }
 
     void Update()
@@ -38,47 +32,24 @@ public class Player : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Jump Buffer
+        // Jump
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            jumpBufferCounter = jumpBuffer;
-        }
-        else
-        {
-            jumpBufferCounter -= Time.deltaTime;
-        }
-
-        // Coyote Time Logic
-        if (isGrounded)
-        {
-            coyoteTimeCounter = coyoteTime;
-            if (emotionSkill != null)
-            {
-                emotionSkill.extraJump = emotionSkill.extraJumpValue;
-            }
-        }
-        else
-        {
-            coyoteTimeCounter -= Time.deltaTime;
-        }
-
-        // Jump Logic
-        if (jumpBufferCounter > 0f) // Normal ground jump
-        {
-            if (coyoteTimeCounter > 0f)
+            
+            if (isGrounded)
             {
                 Jump();
-                jumpBufferCounter = 0f;
             }
             
-            else if (emotionSkill != null && emotionSkill.extraJump > 0)
+            // Double jump skill
+            if (isMidAir && isSkillActive)
             {
                 Jump();
-                emotionSkill.extraJump--;
-                jumpBufferCounter = 0f;
+                Debug.Log("Double Jump");
+                isSkillUsed = true;
             }
         }
-
+        
         // Sprite Flip
         if (moveInput > 0.01f)
         {
@@ -100,11 +71,16 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isMidAir = !isGrounded;
+        
+        if (isGrounded && isSkillActive && isSkillUsed)
+        {
+            isSkillActive = false;  // Reset skill after landing
+        }
     }
 
     private void Jump()
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        coyoteTimeCounter = 0f;
     }
 }

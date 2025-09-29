@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyHealthSystem : MonoBehaviour
 {
-    public int EnemyHealth = 1;
+    public int EnemyHealth = 3;
 
     public void TakeDamage(int damage)
     {

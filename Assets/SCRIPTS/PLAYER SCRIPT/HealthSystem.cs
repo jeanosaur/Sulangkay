@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] public int PlayerHealth; //tracks player's health
-    [SerializeField] public int PlayerMaxHealth = 3; // full health
-    public bool isDead = false;
+    public int PlayerHealth; //tracks player's health
+    public int PlayerMaxHealth = 5; // full health
     private SpriteRenderer spriteRenderer;
 
     private void Start()
@@ -15,28 +14,22 @@ public class HealthSystem : MonoBehaviour
         PlayerHealth = PlayerMaxHealth; //sets current health to full
     }
 
-    public void TakeDamage(int amount) // tracker of damage player takes
+    public void TakeDamage(int damage) // tracker of damage player takes
     {
-         PlayerHealth -= amount;
+         PlayerHealth -= damage;
+         
 
             //if Player's HP reaches zero, the game object is destroyed
-         if (isDead)
+         if (PlayerHealth <= 0)
          {
-             Destroy(gameObject);
              Die();
-             BlinkRed();
              SceneManager.LoadScene(SceneManager.GetActiveScene().name);
          }
     }
 
-    public void Die() //void para mag-active ang isdead() function
+    public void Die()
     {
-        isDead = true;
-    }
-
-    public bool IsDead() //function for item drop
-    {
-        return isDead;
+        Destroy(gameObject);
     }
     
     private IEnumerator BlinkRed() //player blinks red when taking damage
