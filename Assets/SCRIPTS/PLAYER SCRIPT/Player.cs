@@ -12,8 +12,8 @@ public class Player : MonoBehaviour
     
     private Rigidbody2D rb; //for Rigidbody
     public bool isGrounded; //kapag nagtapak si player sa ground
-    public bool isMidAir;
-    public bool isSkillActive;
+    public bool isMidAir; //player ay nasa air
+    public bool isSkillActive; //magiging active kapag napress ung 1
     public bool isSkillUsed;
 
     private EmotionItemSkill emotionSkill; //reference ung EmotionItemSkill.cs
