@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/SCENES/MainMenu.unity
     guid: 0591a31ec2dc1cf42a909967f31f0df6
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/SCENES/Game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/SCENES/Level 1 - Kaogmahan/Level 1-1.unity
+    guid: ad1197226746d5e41ae7b86fe5e78d73
+  - enabled: 1
+    path: Assets/SCENES/Level 1 - Kaogmahan/Level 1-2.unity
+    guid: ddbf79f0f77946b4d9a4bba884f59442
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
