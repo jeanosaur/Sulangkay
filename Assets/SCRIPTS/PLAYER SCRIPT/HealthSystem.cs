@@ -17,6 +17,7 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(int damage) // tracker of damage player takes
     {
          PlayerHealth -= damage;
+         BlinkRed();
          
 
             //if Player's HP reaches zero, the game object is destroyed
