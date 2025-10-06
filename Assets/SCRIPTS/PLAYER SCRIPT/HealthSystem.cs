@@ -12,14 +12,14 @@ public class HealthSystem : MonoBehaviour
     private void Start()
     {
         PlayerHealth = PlayerMaxHealth; //sets current health to full
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(int damage) // tracker of damage player takes
     {
          PlayerHealth -= damage;
-         BlinkRed();
-         
-
+         StartCoroutine(BlinkRed());
+        
             //if Player's HP reaches zero, the game object is destroyed
          if (PlayerHealth <= 0)
          {
@@ -33,10 +33,10 @@ public class HealthSystem : MonoBehaviour
         Destroy(gameObject);
     }
     
-    private IEnumerator BlinkRed() //player blinks red when taking damage
+    public IEnumerator BlinkRed() //player blinks red when taking damage
     {
         spriteRenderer.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
         spriteRenderer.color = Color.white;
     }
 }
