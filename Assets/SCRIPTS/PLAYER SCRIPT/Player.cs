@@ -13,17 +13,17 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb; //for Rigidbody
     public bool isGrounded; //kapag nagtapak si player sa ground
     public bool isMidAir; //player ay nasa air
-    public bool isSkillActive; //magiging active kapag napress ung 1
+    public bool isSkillActive; //magiging active kapag napress ung Z
     public bool isSkillUsed;
 
-    private EmotionItemSkill emotionSkill; //reference ung EmotionItemSkill.cs
+    private EmotionSkill emotionSkill; //reference ung EmotionItemSkill.cs
     private PlayerInventory playerInventory;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // for rigidbody
         playerInventory = GetComponent<PlayerInventory>();
-        emotionSkill = GetComponent<EmotionItemSkill>();
+        emotionSkill = GetComponent<EmotionSkill>();
     }
 
     void Update()
@@ -79,7 +79,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Jump()
+    private void Jump() //For Jump
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
     }
