@@ -28,6 +28,24 @@ public class HealthSystem : MonoBehaviour
          }
     }
 
+    public void TakeHealing(int healing) //tracker for healing
+    {
+        if (PlayerHealth >= PlayerMaxHealth)
+        {
+            PlayerHealth =  PlayerMaxHealth;
+            Debug.Log("Player max health is " + PlayerMaxHealth);
+            return;
+        }
+        
+        PlayerHealth += healing;
+        StartCoroutine(BlinkGreen());
+
+        if (PlayerHealth >= PlayerMaxHealth)
+        {
+            PlayerHealth = PlayerMaxHealth;
+        }
+    }
+
     public void Die()
     {
         Destroy(gameObject);
@@ -36,6 +54,13 @@ public class HealthSystem : MonoBehaviour
     public IEnumerator BlinkRed() //player blinks red when taking damage
     {
         spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.5f);
+        spriteRenderer.color = Color.white;
+    }
+
+    public IEnumerator BlinkGreen() //player blinks green when taking damage
+    {
+        spriteRenderer.color = Color.green;
         yield return new WaitForSeconds(0.5f);
         spriteRenderer.color = Color.white;
     }

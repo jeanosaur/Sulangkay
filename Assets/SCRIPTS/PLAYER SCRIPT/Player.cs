@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 using System.Collections; // Needed for IEnumerator
 
 public class Player : MonoBehaviour
@@ -17,17 +18,24 @@ public class Player : MonoBehaviour
     public bool isSkillUsed;
 
     private EmotionSkill emotionSkill; //reference ung EmotionItemSkill.cs
-    private PlayerInventory playerInventory;
-    
+    private Animator animator;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // for rigidbody
-        playerInventory = GetComponent<PlayerInventory>();
-        emotionSkill = GetComponent<EmotionSkill>();
+        emotionSkill = GetComponent<EmotionSkill>(); //for using skill emotions
+        animator = GetComponent<Animator>(); //for animation
     }
 
-    void Update()
+    private void Update()
     {
+        // Toggle skill with Z
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            isSkillActive = !isSkillActive;
+        }
+        
         // Player movement
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
@@ -42,15 +50,16 @@ public class Player : MonoBehaviour
             }
             
             // Double jump skill
-            if (isMidAir && isSkillActive)
+            else if (isMidAir && isSkillActive && !isSkillUsed)
             {
                 Jump();
-                Debug.Log("Double Jump");
                 isSkillUsed = true;
+                Debug.Log("Double Jump");
+               
             }
         }
         
-        // Sprite Flip
+        //Sprite Flip
         if (moveInput > 0.01f)
         {
             transform.localScale = Vector3.one;
@@ -65,6 +74,11 @@ public class Player : MonoBehaviour
         {
             rb.gravityScale = 3f;
         }
+        
+        // Animation parameters
+        animator.SetBool("isRunning", moveInput != 0);
+        animator.SetBool("isJumping", !isGrounded);
+	
     }
 
     // Keeps player from eternally jumping into space
@@ -73,14 +87,15 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         isMidAir = !isGrounded;
         
-        if (isGrounded && isSkillActive && isSkillUsed)
+        if (isGrounded)
         {
-            isSkillActive = false;  // Reset skill after landing
+            isSkillUsed = false;  // Reset skill 
         }
     }
 
     private void Jump() //For Jump
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        
     }
 }

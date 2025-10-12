@@ -10,7 +10,7 @@ public class ItemPickUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            PlayerInventory inventory = other.GetComponent<PlayerInventory>();
+            PlayerQuestItemInventory inventory = other.GetComponent<PlayerQuestItemInventory>();
 
             if (inventory != null)
             {
