@@ -19,7 +19,15 @@ public class JournalItemPickup : MonoBehaviour
             
             // Add to journal system
             JournalSystem journalSystem = FindObjectOfType<JournalSystem>();
-            
+            if (journalSystem != null)
+            {
+                journalSystem.AddJournalEntry(loreText);
+                Debug.Log($"Journal entry added: {collectibleItemName}");
+            }
+            else
+            {
+                Debug.LogWarning("No JournalSystem found in scene!");
+            }
             //Heals the player upon pickup
             HealthSystem playerHealthSystem = other.GetComponent<HealthSystem>();
             if (playerHealthSystem != null)

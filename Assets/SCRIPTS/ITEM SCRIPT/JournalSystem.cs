@@ -26,7 +26,7 @@ public class JournalSystem : MonoBehaviour
         }
     }
 
-    private void AddJournalEntry(string journalEntry)
+    public void AddJournalEntry(string journalEntry)
     {
         journalEntries.Add(journalEntry);
         UpdateJournalText();
