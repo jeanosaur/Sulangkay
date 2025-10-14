@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d562021ba19f924cbb24483bdb05174
+guid: daade998ac3824940b2bf230377a06f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3655177591843319820
-    second: Lvl 2_0
+      213: -8919782172489721066
+    second: BM_Dirt_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lvl 2_0
+      name: BM_Dirt_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 897
-        height: 1332
+        x: 0
+        y: 2
+        width: 900
+        height: 898
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c00f9c067acc9b230800000000000000
-      internalID: 3655177591843319820
+      spriteID: 61b53e68f51963480800000000000000
+      internalID: -8919782172489721066
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lvl 2_0: 3655177591843319820
+      BM_Dirt_0: -8919782172489721066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
