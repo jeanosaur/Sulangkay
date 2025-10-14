@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ItemPickUp : MonoBehaviour
 {
-    public string collectibleItemName = "Rice Stalk";
+    public string collectibleItemName = "Rice Stalk"; //For item
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -15,8 +15,10 @@ public class ItemPickUp : MonoBehaviour
             if (inventory != null)
             {
                 inventory.AddItem(collectibleItemName);
+                QuestManager.Instance.QuestProgress();
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+            
         }
     }
 }
