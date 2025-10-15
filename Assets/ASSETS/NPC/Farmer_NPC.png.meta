@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1080
+  spritePixelsToUnits: 900
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,42 +106,20 @@ TextureImporter:
       name: Farmer_NPC_0
       rect:
         serializedVersion: 2
-        x: 809
-        y: 1792
-        width: 7
-        height: 6
+        x: 0
+        y: 0
+        width: 1800
+        height: 1800
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a601113c8da8aad0800000000000000
+      spriteID: 726d98daf417a4440ba95084628b75be
       internalID: -2690709959723645271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Farmer_NPC_1
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 1
-        width: 1376
-        height: 1784
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e04eb34f94e817790800000000000000
-      internalID: -7534084253332806642
       vertices: []
       indices: 
       edges: []
@@ -150,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a1b3f5b8385754941b8dffbcc40d6609
     internalID: 0
     vertices: []
     indices: 

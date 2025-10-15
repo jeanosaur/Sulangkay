@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 589a4a8f8c31ce948bf2796c90f70cf8
+guid: 61c26d72cdc5fe34f8d38f392e94529d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9107031617004316153
-    second: haystack_0
+      213: 3976531307838434280
+    second: bamboo spikes_0
+  - first:
+      213: 2630075885715002031
+    second: bamboo spikes_1
+  - first:
+      213: -2130556294417231812
+    second: bamboo spikes_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 500
+  spritePixelsToUnits: 1080
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,23 +106,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: haystack_0
+      name: bamboo spikes_0
       rect:
         serializedVersion: 2
-        x: 76
-        y: 56
-        width: 656
-        height: 295
+        x: 0
+        y: 0
+        width: 1080
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f52bc9210da26e70800000000000000
-      internalID: 9107031617004316153
+      spriteID: 8ebede9e72a7f2730800000000000000
+      internalID: 3976531307838434280
       vertices: []
       indices: 
       edges: []
@@ -125,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 403ccc9ef627aa84ba1859c12da9a9e5
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +141,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      haystack_0: 9107031617004316153
+      bamboo spikes_0: 3976531307838434280
+      bamboo spikes_1: 2630075885715002031
+      bamboo spikes_2: -2130556294417231812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
