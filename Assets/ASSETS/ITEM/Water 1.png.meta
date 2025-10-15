@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: a05acec01a207de4fb54ce833951c140
+guid: 64d362d2a320abe4a86f36cb189a023e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1628205270175405557
-    second: fg tiles right_0
+      213: 3575561350957151056
+    second: Water 1_0
   - first:
-      213: 303942969063398848
-    second: fg tiles right_1
+      213: 8017338940516311119
+    second: Water 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fg tiles right_0
+      name: Water 1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5593e011c889610800000000000000
-      internalID: 1628205270175405557
+      spriteID: f40a169e94f434f60800000000000000
+      internalID: 8017338940516311119
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 16270117d4bc7da4090ba45bb2e28f68
+    spriteID: cfb10e1f079230a4d80e5b9227dc47ed
     internalID: 0
     vertices: []
     indices: 
@@ -138,8 +138,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fg tiles right_0: 1628205270175405557
-      fg tiles right_1: 303942969063398848
+      Water 1_0: 3575561350957151056
+      Water 1_1: 8017338940516311119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: a05acec01a207de4fb54ce833951c140
+guid: 2f103fe4ab447494ca96af6d576b6357
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1628205270175405557
-    second: fg tiles right_0
-  - first:
-      213: 303942969063398848
-    second: fg tiles right_1
+      213: 9135130128162984572
+    second: rice_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fg tiles right_0
+      name: rice_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5593e011c889610800000000000000
-      internalID: 1628205270175405557
+      spriteID: c729f1a937086ce70800000000000000
+      internalID: 9135130128162984572
       vertices: []
       indices: 
       edges: []
@@ -128,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 16270117d4bc7da4090ba45bb2e28f68
+    spriteID: 9cd85af7f1de9aa49a2ab2cc728e58c2
     internalID: 0
     vertices: []
     indices: 
@@ -138,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fg tiles right_0: 1628205270175405557
-      fg tiles right_1: 303942969063398848
+      rice_0: 9135130128162984572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
