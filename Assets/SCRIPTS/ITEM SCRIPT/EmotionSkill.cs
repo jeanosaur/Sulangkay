@@ -1,57 +1,48 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class EmotionSkill : MonoBehaviour
 {
     private Player player;
-    private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
-    public Sprite defaultSprite; //default Sprite
-    public Sprite joySprite;
-    
     // For Double Jump
     public int extraJumpValue = 1;
     public int extraJump = 0;
-   
 
     private void Start()
     {
-        extraJump = 0;
-        player = GetComponent<Player>(); //reference Player.cs
-        spriteRenderer = GetComponent<SpriteRenderer>(); //Reference sa player Sprite Renderer
+        player = GetComponent<Player>();
+        animator = GetComponent<Animator>();
 
-        if (spriteRenderer != null && defaultSprite != null)
-        {
-            spriteRenderer.sprite = defaultSprite; // Ensures correct starting sprite
-        }
+        extraJump = 0;
+        player.isSkillActive = false; // ensure off at start
+
+        if (animator != null)
+            animator.SetBool("isJoyActive", false);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z)) //Toggle skill state
+        if (Input.GetKeyDown(KeyCode.Z)) // Toggle Joy skill
         {
             player.isSkillActive = !player.isSkillActive;
 
             if (player.isSkillActive)
             {
                 player.isSkillUsed = false;
-                Debug.Log("Double Jump Skill Activated!");
+                Debug.Log("Joy Activated - Double Jump Enabled");
 
-                if (spriteRenderer != null && joySprite != null) //change default to skill
-                {
-                    spriteRenderer.sprite = joySprite;
-                }
+                if (animator != null)
+                    animator.SetBool("isJoyActive", true);
             }
             else
             {
                 player.isSkillUsed = true;
-                Debug.Log("Double Jump Skill Deactivated!");
-                
-                if (spriteRenderer != null && defaultSprite != null)
-                {
-                    spriteRenderer.sprite = defaultSprite;
-                }
+                Debug.Log("Joy Deactivated - Double Jump Disabled");
+
+                if (animator != null)
+                    animator.SetBool("isJoyActive", false);
             }
         }
     }
